@@ -33,39 +33,24 @@ Create the following table in the database defined in `config/db.php`:
 
 
 ##Directory Structure
-`/`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`/classes`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-`user.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`/config`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-`config.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-`db.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`/css`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-`style.css`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`/libraries` 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-`password.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`/sessions` 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`/views` 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-`loggedin.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-`login.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`index.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`init.php`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;
-`register.php`
+    
+    /
+	    /classes
+    	    user.php
+	    /config
+    	    config.php
+        	db.php
+	    /css
+			style.css	    
+		/libraries
+			password.php
+		/sessions
+		/views
+			loggedin.php
+			login.php
+		index.php
+		init.php
+		register.php
 
 
 ##Use Cases
