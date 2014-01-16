@@ -1,0 +1,46 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+ul {
+	list-style-type:none;
+}
+
+.container {
+	width:90%;
+	margin:auto;
+	font-family:Verdana, Helvetica, Arial;
+}
+
+
+.forms {
+	width:80%;
+}
+
+.forms ul li {
+	margin-bottom:4px;
+}
+
+.forms label {
+	font-size:10px;
+}
+
+.forms input[type=text],
+.forms input[type=password] {
+	border:1px solid #bbb;
+	background: #eee;
+	line-height:14px;
+	font-size:13px;
+	padding:3px;
+	width:60%;
+}
+
+.forms input[type=submit] {
+	border:1px solid #bbb;
+	background: #eee;
+	padding:5px;
+	margin:10px 0;
+	cursor:pointer;
+}
+
