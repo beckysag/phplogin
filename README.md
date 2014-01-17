@@ -65,6 +65,10 @@ It first looks for an existing session and then looks at posted data to determin
 
 ###1. Include `init.php` at the top of each page:
 
+    require_once("init.php");
+
+`init.php` does the following:
+
 * starts (or resumes) a session
 * defines database constants
 * opens a new connection to the database
@@ -74,8 +78,24 @@ It first looks for an existing session and then looks at posted data to determin
 
 ###2. Instantiate a `User` object
 
+Create a new `User` object, passing it an instance of a PDO database connection:
 
-###3. Submit a form with a submit button with a name in {}
+    $user1 = new User($db);
+
+
+###3. Submit a form to register/login/logout
+
+The action taken will depend on the name of the `input[type=submit]` button:
+
+To register:
+`<input type="submit" name="register" value="Register">`
+
+To login:
+`<input type="submit" name="login" value="Login">`
+
+
+To logout:
+`<input type="submit" name="logout" value="Logout">`
 
 
 
