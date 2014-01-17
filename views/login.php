@@ -23,12 +23,12 @@
 
 			// if isMissingLoginField()
 			if ( $user1->isMissingLoginField() ) {
-				echo "All fields are required<br>";
+				echo '<div class="error">All fields are required</div>';
 			}
 
 			// else if isWrongCredentials()
 			elseif ( $user1->isWrongCredentials() ) {
-				echo "Incorrect username/password combination<br>";
+				echo '<div class="error">Incorrect username/password combination</div>';
 			}
 		}
 		?>

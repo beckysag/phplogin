@@ -22,22 +22,22 @@
 
 			// if isMissingRegField()
 			if ( $user1->isMissingRegField() ) {
-				echo "All fields are required";
+				echo '<div class="error">All fields are required </div>';
 			}
 	
 			// else if isPasswordMismatch()
 			elseif ( $user1->isPasswordMismatch() ) {
-				echo "Passwords don't match";		
+				echo '<div class="error">Passwords don\'t match</div>';
 			}
 
 			// else if userExists()
 			elseif ( $user1->userExists() ) {
-				echo "Username is already taken";		
+				echo '<div class="error">Username is already taken</div>';
 			}
 
 			// else if invalidChars()
 			elseif ( $user1->invalidChars() ) {
-				echo "Invalid characters";		
+				echo '<div class="error">Invalid characters</div>';
 			}
 
 		}
