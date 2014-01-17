@@ -46,6 +46,7 @@ Create the following table in the database defined in `config/db.php`:
 		/views
 			loggedin.php		-- displayed upon user login
 			login.php			-- login form
+			register.php		-- registration form
 		index.php
 		init.php			-- includes configuration settings
 		register.php		-- user registration page

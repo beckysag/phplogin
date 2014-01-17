@@ -11,11 +11,12 @@ ul {
 	width:90%;
 	margin:auto;
 	font-family:Verdana, Helvetica, Arial;
+	padding-top:50px;
 }
 
 
 .forms {
-	width:80%;
+	width:100%;
 }
 
 .forms ul li {
@@ -44,3 +45,12 @@ ul {
 	cursor:pointer;
 }
 
+
+@media screen and (max-width: 500px) {
+	.forms input[type=text],
+	.forms input[type=password] {
+		width:100%;
+	}
+
+
+}

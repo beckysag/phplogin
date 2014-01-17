@@ -37,7 +37,7 @@
 			<h2>Login Form</h2>
 		</div>
 
-		<form class="forms" method="post" action="<?php echo $_SERVER['PHP_SELF']?>" novalidate>
+		<form class="forms" method="post" novalidate>
 		
 			<ul>
 				<li>

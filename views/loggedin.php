@@ -23,7 +23,7 @@
 		?>
 
 
-		<form method="post">
+		<form class="forms" method="post">
 			<input type="submit" name="logout" value="logout">
 		</form>	
 

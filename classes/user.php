@@ -1,7 +1,5 @@
 <?php
 
-//file_put_contents('log.txt',$log);
-
 /**
  * User class
  * 
@@ -9,26 +7,9 @@
  * constructor requires an active database connection
  */
 
-
-// TO DO:
-// To prevent session hijacking through cross site scripting (XSS) you should always filter 
-// 		and escape all user supplied values before printing them to screen. 
-
-// apply htmlentites() to anything that you are outputting from a user's input 
-//		(this includes the session data you are returning to pre-fill the form input values):
-
-// ssl, https
-
-
-
 class User
 {
     private $db;
-    private $username;
-    //protected $user_id;
-    //protected $password; 
-    //protected $first_name;
-    //protected $last_name;
 
     private $is_logged_in = false;	
 
@@ -84,7 +65,7 @@ class User
 	 *	 	 $_POST['confirm'], $_POST['submit'], 
 	 * 		 $_POST['fname'], $_POST['lname']
  	 */
-	public function register() 
+	private function register() 
 	{
 		// If the form was just submitted
 		if (isset($_POST["register"])) {
@@ -211,7 +192,6 @@ class User
 
 	/**
 	 * logout function
-	 *
 	 * triggered when $_POST['logout'] is set
  	 */
 	private function logout()
@@ -225,7 +205,7 @@ class User
 
     /**
      * query database for $username to see if it exists
-     * @return boolean indicating whether $username exists
+     * returns boolean indicating whether $username exists
      */
 	private function is_username_taken($username)
 	{
@@ -242,7 +222,6 @@ class User
 		if (count($rows) > 0) {
 			return true;
 		} else {
-			file_put_contents('log.txt',0);
 			return false;
 		}
 	}
@@ -251,7 +230,6 @@ class User
 
     /**
      * return current state of the error flag
-     * @return boolean error flag
      */
     public function isError()
     {
@@ -262,7 +240,6 @@ class User
 
     /**
      * return current state of the password mismatch flag
-     * @return boolean password mismatch flag
      */
     public function isPasswordMismatch()
     {
@@ -272,8 +249,7 @@ class User
 
 
     /**
-     * return current state of the password flag
-     * @return boolean password flag
+     * return current state of the credentials flag
      */
     public function isWrongCredentials()
     {
@@ -284,7 +260,6 @@ class User
 
     /**
      * return current state of the missing registration field flag
-     * @return boolean missing registration field flag
      */
     public function isMissingRegField()
     {
@@ -294,7 +269,6 @@ class User
 
     /**
      * return current state of the missing login field flag
-     * @return boolean missing login field flag
      */
     public function isMissingLoginField()
     {
@@ -304,7 +278,6 @@ class User
 
     /**
      * return current state of the user exists flag
-     * @return boolean user exists flag
      */
 	public function userExists()  
     {
@@ -314,7 +287,6 @@ class User
 
     /**
      * return current state of the logged in flag
-     * @return boolean logged in flag
      */
 	public function isLoggedIn()  
     {
@@ -324,7 +296,6 @@ class User
 
     /**
      * return current state of the invalid chars flag
-     * @return boolean invalid chars flag
      */
 	public function invalidChars()  
     {
@@ -334,7 +305,6 @@ class User
 
     /**
      * return user's username
-     * @return string user's username
      */
 	public function getUsername()  
     {
